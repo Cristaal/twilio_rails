@@ -20,8 +20,11 @@ group :development, :test do
   gem 'pry'
   gem 'launchy'
   gem 'faker'
+  gem 'dotenv-rails'
 end
 
 group :test do
+  gem 'webmock'
+  gem 'vcr'
   gem 'rspec-rails'
 end
