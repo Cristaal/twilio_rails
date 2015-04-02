@@ -1,0 +1,13 @@
+
+
+
+<%= form_for @address do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.label :phone %>
+<%= f.text_field :phone %>
+</br>
+</br>
+</br>
+<%= f.submit class: 'btn btn-success', method: "update" %>
+<% end %>

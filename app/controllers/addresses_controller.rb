@@ -23,5 +23,5 @@ class AddressesController < ApplicationController
     def address_params
       params.require(:address).permit(:name, :phone)
     end
-  end
+
 end

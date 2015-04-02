@@ -13,7 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rest-client'
 gem 'high_voltage', '~> 2.2.1'
-gem 'therubyracer'
+
 
 group :development, :test do
   gem 'byebug'
@@ -24,6 +24,7 @@ group :development, :test do
   gem 'faker'
   gem 'dotenv-rails'
   gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
 end
 
 group :test do
