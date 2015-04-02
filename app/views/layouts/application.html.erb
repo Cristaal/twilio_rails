@@ -8,6 +8,23 @@
 </head>
 <body>
 
+  <nav class="nav navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <ul class="main-nav list-unstyled">
+          <li><%= link_to "Texter", root_path, class: 'navbar-brand' %></li>
+        </ul>
+      </div>
+      <ul class="nav navbar-nav navbar-left">
+        <li>Login path (eventually)</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Your Messages", messages_path %></li>
+        <li><%= link_to "Address Book", addresses_path %></li>
+      </ul>
+    </div>
+  </nav>
+
 <%= flash[:success] %>
 <%= flash[:danger] %>
 <div>
