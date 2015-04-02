@@ -1,0 +1,15 @@
+
+HELLO WORLD!!!
+<% if @messages.any? %>
+  <h4>Your Messages</h4>
+  <ul>
+    <% @messages.each do |message| %>
+      <li>
+        Message body: <%= message.body %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <h4>No messages . . . yet!</h4>
+  <%= link_to "Write Message!", new_message_path %>
+<% end %>

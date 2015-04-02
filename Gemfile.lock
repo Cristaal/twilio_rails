@@ -67,6 +67,7 @@ GEM
       i18n (~> 0.5)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
+    high_voltage (2.2.1)
     hike (1.2.3)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
@@ -201,6 +202,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   dotenv-rails
   faker
+  high_voltage (~> 2.2.1)
   jbuilder (~> 2.0)
   jquery-rails
   launchy

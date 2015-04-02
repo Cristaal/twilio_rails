@@ -8,11 +8,12 @@
 </head>
 <body>
 
-<marquee direction="up" behavior="alternate" scrollamount="30">
+<%= flash[:success] %>
+<%= flash[:danger] %>
 
 <%= yield %>
 
-</marquee>
+
 
 </body>
 </html>

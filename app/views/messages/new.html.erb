@@ -1,0 +1,24 @@
+<h1>New message</h1>
+
+<% if @message.errors.any? %>
+  <p>
+    Something went wrong:
+  </p>
+  <ul>
+    <% @message.errors.full_message.each do |message| %>
+      <li><%=  message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+
+<%= form_for @message do |f| %>
+  <%= f.label :to %>
+  <%= f.text_field :to, class: 'form-control', required: true, autofocus: true %>
+  <%= f.label :from %>
+  <%= f.text_field :from, class: 'form-control', required: true, autofocus: true %>
+  <%= f.label :body %>
+  <%= f.text_field :body, class: 'form-control', required: true, autofocus: true %>
+  <%= f.submit class: 'btn btn-success' %>
+<% end %>
