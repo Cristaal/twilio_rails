@@ -19,6 +19,10 @@ class AddressesController < ApplicationController
     end
   end
 
+  def show
+    @address = Address.find(params[:id])
+  end
+
   private
     def address_params
       params.require(:address).permit(:name, :phone)

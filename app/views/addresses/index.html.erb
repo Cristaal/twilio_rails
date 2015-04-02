@@ -1,0 +1,10 @@
+<% if @addresses.any? %>
+  <h4>Your Contacts</h4>
+  <% @addresses.each do |address| %>
+    <ul>
+      <li>
+        <%= link_to address.name, address_path(address) %>
+      </li>
+    </ul>
+  <% end %>
+<% end %>

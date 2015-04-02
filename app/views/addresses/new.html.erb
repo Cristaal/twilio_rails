@@ -1,13 +1,14 @@
 
 
+<div class="col-md-6">
 
 <%= form_for @address do |f| %>
 <%= f.label :name %>
-<%= f.text_field :name %>
+<%= f.text_field :name, class: 'form-control' %>
 <%= f.label :phone %>
-<%= f.text_field :phone %>
+<%= f.text_field :phone, class: 'form-control' %>
 </br>
-</br>
-</br>
-<%= f.submit class: 'btn btn-success', method: "update" %>
+
+<%= f.submit class: 'btn btn-primary', method: "update" %>
 <% end %>
+</div>
