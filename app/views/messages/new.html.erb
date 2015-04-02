@@ -12,6 +12,7 @@
 <% end %>
 
 
+<div class="col-md-6" >
 
 <%= form_for @message do |f| %>
   <%= f.label :to %>
@@ -20,5 +21,7 @@
   <%= f.text_field :from, class: 'form-control', required: true, autofocus: true %>
   <%= f.label :body %>
   <%= f.text_field :body, class: 'form-control', required: true, autofocus: true %>
+  <br>
   <%= f.submit class: 'btn btn-success' %>
 <% end %>
+</div>

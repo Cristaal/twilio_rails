@@ -13,7 +13,7 @@ private
         :password => ENV['TWILIO_AUTH_TOKEN'],
         :payload => { :Body => body,
                       :To => to,
-                      :From => from }
+                      :From =from }
       ).execute
     rescue RestClient::BadRequest => error
       message = JSON.parse(error.response)['message']
